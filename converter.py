@@ -1,5 +1,5 @@
 from font import Font, FontLoader
-
+from textdrawer import TextDrawer
 
 def getText():
     return 'Git'
@@ -9,13 +9,6 @@ class Font:
 
 class FontLoader:
     def loadFont(self,directory):
-        pass
-
-class TextDrawer:
-    def setFont(self,font):
-        pass
-
-    def draw(self,text):
         pass
 
 
