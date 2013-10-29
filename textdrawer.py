@@ -3,4 +3,5 @@ class TextDrawer:
         self.font = font
 
     def draw(self, text):
-        pass
+        for character in text:
+            print self.font.letters[character.upper()] 
