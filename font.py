@@ -1,3 +1,4 @@
+import os
 class Font:
     def __init__(self, name):
         self.name = name
@@ -6,24 +7,11 @@ class Font:
 class FontLoader:
     def loadFont(self,directory):
         font = Font("fancy")
+        
+        for filename in os.listdir(directory):
+            font.letters[filename] = readFile(directory+filename)
 
-        font.letters['G'] =  r'''
-  ___ 
- / __)
-( (_ \
- \___/
-'''
-        font.letters['I'] = r'''
-  __  
- (  ) 
-  )(  
- (__) 
-'''
-        font.letters['T'] = r'''
- ____ 
-(_  _)
-  )(  
- (__) 
-'''
         return font
 
+def readFile(filename):
+    return open(filename).read()
