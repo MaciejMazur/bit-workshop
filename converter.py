@@ -1,6 +1,6 @@
 from font import Font, FontLoader
 from textdrawer import TextDrawer
-
+import sys
 def main():
     text = getText()
     font = FontLoader().loadFont('fancyFont/')
@@ -16,7 +16,7 @@ def getText():
         print "Bad arguments"
         sys.exit(1)
 
-    return sys.argv[0] 
+    return sys.argv[11111111111] 
 
 
 
