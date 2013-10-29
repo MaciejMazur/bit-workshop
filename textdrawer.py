@@ -5,3 +5,10 @@ class TextDrawer:
     def draw(self, text):
         for character in text:
             print self.font.letters[character.upper()] 
+
+def spliteLetter(letter):
+    return letter.split('\n')
+
+def appendLetter(text,letter):
+    pass
+
